@@ -113,4 +113,4 @@ else:
                     size = bti(data[:-1]) + 4
                     donesize = True
     with open(args.file, 'wb') as f:
-       f.write(b''.join(map(itb, data[5:size])))
+       f.write(b''.join(map(itb, data[4:size])))

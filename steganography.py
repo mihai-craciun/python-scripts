@@ -111,7 +111,6 @@ else:
                     data.append(0)
                 if pos == 4 and not donesize:
                     size = bti(data[:-1]) + 4
-                    print(size)
                     donesize = True
     with open(args.file, 'wb') as f:
        f.write(b''.join(map(itb, data[5:size])))
